@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Draw</title>
+		<style>
+			.nav{
+				width:770px;
+				height:70px;
+				background-color:#e1e1e1;
+				position:fixed;
+				top:10px;
+				left:50%;
+				transform:translateX(-50%);
+				align-items:center;
+				justify-content:center;
+				display:flex;
+			}
+			.clr{
+				width:30px;
+				height:30px;
+				border-radius:50%;
+				background-color:#000;
+				margin-right:10px;
+				border:3px solid #fff;
+				cursor:pointer;
+			}
+			.clr:nth-child(1){
+				background-color:#000;
+			}
+			.clr:nth-child(2){
+				background-color:red;
+			}
+			.clr:nth-child(3){
+				background-color:yellow;
+			}
+			.clr:nth-child(4){
+				background-color:orange;
+			}
+			.clr:nth-child(5){
+				background-color:blue;
+			}
+			.clr:nth-child(6){
+				background-color:green;
+			}
+			.clr:nth-child(7){
+				background-color:pink;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+		<div class='nav'>
+			<div class='clr' data-clr='#000'></div>
+			<div class='clr' data-clr='red'></div>
+			<div class='clr' data-clr='yellow'></div>
+			<div class='clr' data-clr='orange'></div>
+			<div class='clr' data-clr='blue'></div>
+			<div class='clr' data-clr='green'></div>
+			<div class='clr' data-clr='pink'></div>
+			<input type='color'>
+			<button class='spider'></button>
+			<select class='selector'>
+				<option value=''>Select line's size</option>
+				<option value='5'>5</option>
+				<option value='10'>10</option>
+				<option value='15'>15</option>
+				<option value='20'>20</option>
+				<option value='25'>25</option>
+				<option value='30'>30</option>
+				<option value='35'>35</option>
+				<option value='40'>40</option>
+				<option value='45'>45</option>
+				<option value='50'>50</option>
+			</select>
+			<button class="select">Select</button>
+			<button class='clear'>clear</button>
+			<button class='save'>save</button>
+		</div>
+		<script src='app.js'></script>
+	</body>
+</html>
